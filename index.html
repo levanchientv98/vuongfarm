@@ -1,96 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    body {
-  margin: 0 auto;
-  background-color: lightgrey;
-}
-.wrapper {
-  background-color: white;
-  padding: 30px 70px;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
 
-ul {
-  text-align: center;
-}
-#content {
-  overflow: auto;
-}
-
-.column1, .column2, .column3 {
-  width: 31.3%;
-  float: left;
-}
-
-.column1 {
-  float: left;
-}
-.column2 {
-  margin: 0% 3%;
-}
-.column3 {
-  float: right;
-  margin: 0%;
-}
-
-
-li {
-  display: inline;
-  padding: 0.5em;
-}
-
-.banner, .article {
-  background-color: #efefef;
-  height: 10em;
-  margin-bottom: 1em;
-}
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-  </style>
-</head>
-<body>
-  <div class="wrapper">
-    <div class="header">
+  <body>
+    <div class="wrapper">
+      <div class="header">
         <ul class="nav">
           <li class="logo">VuongFarm</li>
-          <li><a href="">Home</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">Contact</a></li>
+          <li class="title"><a id="home" href="#">Home</a></li>
+          <li class="title"><a id="products" href="#">Products</a></li>
+          <li class="title"><a id="contact" href="#">Contact</a></li>
         </ul>
         <ul class="top-icon">
-          <li>x</li>
-          <li>y</li>
-          <li>z</li>
+          <li class="cart">
+            <a href="#"><img src="./img/category.svg" alt="Cart" /></a>
+          </li>
+          <li class="info">
+            <a href="#"><img src="./img/info.svg" alt="info-user" /></a>
+          </li>
+          <li class="menu">
+            <a href="#"><img src="./img/menubar.svg" alt="menubar" /></a>
+          </li>
         </ul>
+      </div>
+      <div id="content">
+        <div class="banner1">
+          <div class="section1">
+            <div class="text-style">
+              <p>Buy your dream plants</p>
+            </div>
+            <div class="flex-container">
+              <div class="flex-item1">
+                <p class="text-style1">50+</p>
+                <p class="text-style2">Plant Species</p>
+              </div>
+              <div>
+                <p class="text-style1">100+</p>
+                <p class="text-style2">Customers</p>
+              </div>
+            </div>
+            <div class="search-box">
+              <input
+                type="text"
+                name="search"
+                placeholder="What are you looking for ?"
+              />
+              <button><img src="./img/look.svg" alt="search-icon" /></button>
+            </div>
+          </div>
+          <div class="img-style">
+            <img src="./img/ImgTree.svg" alt="img-tree" />
+          </div>
+        </div>
+
+        <div class="landing-page">
+          <div class="title-content1">
+            <h2>Best Selling Plants</h2>
+            <p>Easiest way to healthy life by buying your favorite plants</p>
+            <div class="button-with-icon">
+              <a href="#"
+                ><button>
+                  <span>See more</span>
+                  <img
+                    src="./img/arrow-right.svg"
+                    alt="Arrow-Right"
+                    class="arrow-right-icon"
+                  />
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="grid-container">
+            <div class="gird-item">
+              <img src="./img/Nature.svg" alt="img-tree1" />
+              <p>Natural Plants</p>
+              <p id="price-style">140.000đ</p>
+            </div>
+            <div class="gird-item">
+              <div>
+                <img src="./img/Nature1.svg" alt="img-tree1" />
+                <p>Artificial Plants</p>
+                <p id="price-style">900.000đ</p>
+              </div>
+            </div>
+            <div class="gird-item">
+              <div>
+                <img src="./img/Nature2.svg" alt="img-tree1" />
+                <p>Artificial Plants</p>
+                <p id="price-style">35.000đ</p>
+              </div>
+            </div>
+            <div class="gird-item">
+              <div>
+                <img src="./img/Nature3.svg" alt="img-tree1" />
+                <p>Natural Plants</p>
+                <p id="price-style">140.000đ</p>
+              </div>
+            </div>
+            <div class="gird-item">
+              <div>
+                <img src="./img/Nature4.svg" alt="img-tree1" />
+                <p>Artificial Plants</p>
+                <p id="price-style">900.000đ</p>
+              </div>
+            </div>
+            <div class="gird-item">
+              <div>
+                <img src="./img/Nature5.svg" alt="img-tree1" />
+                <p>Artificial Plants</p>
+                <p id="price-style">35.000đ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-us-section">
+          <div class="title-content2">
+            <h2>About Us</h2>
+            <p>Order now and appreciate the beauty of nature</p>
+          </div>
+          <div class="flex-container1">
+            <div class="flex-item2">
+              <div class="background-icon">
+                <img src="./img/icon-tree.svg" alt="icon-tree" />
+              </div>
+              <h3>Large Assortment</h3>
+              <p>
+                we offer many different types of products with fewer variations
+                in each category
+              </p>
+            </div>
+            <div class="flex-item2">
+              <div class="background-icon">
+                <img src="./img/icon-box.svg" alt="icon-box" />
+              </div>
+              <h3>Fast & Free Shipping</h3>
+              <p>
+                4-day or less delivery time, free shipping and an expedited
+                delivery option.
+              </p>
+            </div>
+            <div class="flex-item2">
+              <div class="background-icon">
+                <img src="./img/icon-telephone.svg" alt="icon-telephone" />
+              </div>
+              <h3>24/7 Support</h3>
+              <p>
+                answers to any business related inquiry 24/7 and in real-time.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="categori-section">
+          <div class="title-content2">
+            <h2>Categories</h2>
+            <p>Find what you are looking for</p>
+          </div>
+        </div>
+        <div class="banner">
+          <p>What say?</p>
+        </div>
+      </div>
+      <footer class="footer">
+        <p>&copy; 2023 all Right Reserved Term of use LowBoy</p>
+      </footer>
     </div>
-    <div id="content">
-      <div class="banner">
-        <p>Banner</p>
-      </div>
-      <div class="banner">
-        <p>Best Seller</p>
-      </div>
-      <div class="banner">
-        <p>About Us</p>
-      </div>
-      <div class="banner">
-        <p>Categories</p>
-      </div>
-      <div class="banner">
-        <p>What say?</p>
-      </div>
-    </div>
-    <footer class="footer">
-      <p>&copy; 2023 all Right Reserved Term of use  LowBoy</p>
-    </footer>
-  </div>
-</body>
+  </body>
 </html>
